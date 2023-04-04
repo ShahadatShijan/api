@@ -11,6 +11,7 @@ const getdata = () =>{
     }
     xhr.onerror = () =>{
         console.log("error is here");
+        
     }
 
     xhr.send();
