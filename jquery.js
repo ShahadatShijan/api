@@ -29,6 +29,19 @@ const sendData = () =>{
     .then((res) => console.log(res))      
 }
 
+const updateData = () =>{
+    makeRequest("https://jsonplaceholder.typicode.com/posts/1","PUT",{
+        id: 1,
+        title: 'fooMA',
+        body: 'bar',
+        userId: 1,
+      })
+    .then((res) => console.log(res))      
+}
+
 
 // getData();
-sendData();
+//sendData();
+updateData();
+
+
